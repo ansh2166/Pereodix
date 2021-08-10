@@ -497,7 +497,11 @@ def atomic(z):
 @app.route('/symbol/<element>')
 def symbol(element):
  o=element.title()
- return (symbols[o]) 
+ if element in symbols:
+    return (symbols[o])
+else:
+    return (“Element not found”)
+
 
 if __name__ == '__main__':
   app.run()
