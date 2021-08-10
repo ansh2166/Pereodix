@@ -365,9 +365,8 @@ def latin_name(x):
   y=x.title()
   return (LatinName[y])
 
-@app.route('/atmoic/<string:element>')
-def atomic(element):
-  z=element.title()
+@app.route('/atomic/<string:z>')
+def atomic(z):
   retrurn(AtomicNumber[z])
   
 if __name__ == '__main__':
