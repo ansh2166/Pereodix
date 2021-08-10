@@ -368,7 +368,6 @@ def latin_name(x):
 @app.route('/atomic/<string:z>')
 def atomic(z):
  a=z.title()
-  return (AtomicNumber[a])
-  
+ return (AtomicNumber[a]) 
 if __name__ == '__main__':
   app.run()
