@@ -235,7 +235,7 @@ LatinName= {"Hydrogen":"Hydrogenium"
  ,"Oganesson":"Oganesson"}
 
 
-AtomicNumber{
+AtomicNumber = {
  "Hydrogen":1
 ,"Helium":2
 ,"Lithium":3
