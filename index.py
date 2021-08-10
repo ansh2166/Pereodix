@@ -499,7 +499,7 @@ def symbol(element):
  o=element.title()
  if element in symbols:
     return (symbols[o])
-else:
+elif:
     return (“Element not found”)
 
 
