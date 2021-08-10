@@ -482,6 +482,9 @@ from flask import Flask
 
 app = Flask(__name__)
 
+@app.route('/')
+def main():
+    return 'API is working!'
 
 @app.route('/latin/<string:x>')
 def latin_name(x):
@@ -497,11 +500,7 @@ def atomic(z):
 @app.route('/symbol/<element>')
 def symbol(element):
  o=element.title()
- if element in symbols:
-    return (symbols[o])
-elif:
-    return (“Element not found”)
-
+ return (symbols[o])
 
 if __name__ == '__main__':
   app.run()
